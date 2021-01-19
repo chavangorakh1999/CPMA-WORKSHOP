@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+function f1(){
+
+    const x=document.getElementById("ID1").value;
+    const y=parseInt(x);
+
+    if(y%2==0){
+        document.getElementById("p1").innerHTML=y +" is even number";
+    }else{
+        document.getElementById("p1").innerHTML=y +" id odd number";
+    }
+}
+</script>
+
+<body>
+    <select ID="ID1"> 
+        <option>Choose an option</option> 
+        <option value="11">ELEVEN</option> 
+        <option value="12">TWELVLE</option> 
+        <option value="13">THIRTEEN</option> 
+        <option value="14">FOURTEEN</option> 
+        </select> 
+        <br> 
+        <br> 
+        <br> 
+        <div id="p1"></div> 
+        <br> 
+        <br> 
+        <br> 
+        <input type="button" value="find out" onclick="f1();"> 
+        
+</body>
+</html>
