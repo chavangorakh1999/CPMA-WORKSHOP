@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="personalDetails">
+      <div class="topHeading">
+        <h1 class="heading">Personal Deatils</h1>
+      </div>
+      <div class="inputForm">
+        <form>
+          <div class="form-group">
+            <h4 class="titles">Enter Your Name Please:</h4>
+
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+            />
+          </div>
+
+          <div class="form-group">
+            <h4 class="titles">Gender</h4>
+
+            <input type="radio" id="Male" name="gender" value="Male" />
+            <label for="Male">Male</label>
+            <br />
+
+            <input type="radio" id="Female" name="gender" value="Female" />
+            <label for="Female">Female</label>
+          </div>
+          <h4 class="titles">Hobbies</h4>
+
+          <div class="form-group form-check">
+            <input type="checkbox" name="hobbie" class="form-check-input" id="reading" value="reading"/>
+            <label class="form-check-label" for="exampleCheck1">Reading</label>
+            <br />
+            <input type="checkbox" name="hobbie" class="form-check-input" id="swimming" value="swimming"/>
+            <label class="form-check-label" for="exampleCheck1">swimming</label>
+            <br />
+            <input type="checkbox" name="hobbie" class="form-check-input" id="yoga" value="yoga"/>
+            <label class="form-check-label" for="exampleCheck1">yoga</label>
+          </div>
+          <h4 class="titles">Location</h4>
+
+          <div class="form-group">
+            <!-- <label for="exampleFormControlSelect1">Example select</label> -->
+            <select class="form-control" id="city">
+              <option value="Mumbai">Mumbai</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Pune">Pune</option>
+              <option value="Kolkatta">Kolkatta</option>
+            </select>
+          </div>
+          <div>
+            <label for="Intro">Details</label>
+            <h4 id="intro"></h4>
+          </div>
+          <input class="btn btn-primary" onclick="getDetails()" type="button" value="Display Info">
+          <!-- <button type="submit" class="btn btn-primary">Display Info</button> -->
+        </form>
+      </div>
+    </div>
+    <script src="./js/index.js" ></script>
+  </body>
+</html>
