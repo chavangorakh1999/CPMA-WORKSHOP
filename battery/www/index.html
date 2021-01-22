@@ -1,0 +1,30 @@
+<html>
+<head>
+    <style>
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+    </style>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript">
+function checkbattery()
+{
+window.addEventListener("batterystatus", function1);
+}
+function  function1(p) {
+alert("hello");
+alert("Percentage of Chargeing: " + p.level + " Is Plugged : " + p.isPlugged);
+}
+</script>
+</head>
+<body>
+<button onclick="checkbattery()" class="button">Battery Status</button>
+</body>
+</html>
