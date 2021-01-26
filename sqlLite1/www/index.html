@@ -1,28 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        function sample(){
-            var db= openDatabase('mydatabase','1.0','Test DB',2* 1024 * 1024);
-            var a=document.getElementById("t1").value;
-            var b=document.getElementById("t2").value;
-            db.transaction(function(tx){
-                tx.executeSql('CREATE TABLE IF NOT EXISTS EMPLOYEE (id unique,name)');
-                tx.executeSql('INSERT INTO EMPLOYEE VALUES (?,?)',[a,b]);
-
-            });
-            alert("record inserted");
-        }
-    </script>
-</head>
-
-<body>
-    <H1>simple example to insert record</H1>
-    Enter Id <input type="text" id=t1>
-    Enter Name <input type="text" id=t2>
-    <button onclick="sample()">Insert</button>
-</body>
-</html>
+<html>
+    <head>
+       <script>
+            
+           
+           </script>
+                   <title>sample 3</title>
+    
+       <link rel="Stylesheet"  href="./css/index.css"/>
+    
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    
+       
+   <body>
+    
+   <h1>CONTACT FORM</h1>
+    
+                 <form id="mycontact">
+    
+                <fieldset>
+    
+                        <legend>Your details</legend>
+    
+                              <ol>
+    
+                                     <li>
+    
+                <label for="username">Name</label>
+    
+             <input id="username" type="text" placeholder="First and last name" required autofocus pattern="">
+    
+                   <input type="hidden" id="id"/>
+    
+                                     </li>
+    
+                                     <li>
+    
+                                            <label for="useremail">Email</label>
+    
+                                            <input id="useremail" type="text" placeholder="example@domain.com" required pattern="">
+    
+                                     </li>
+    
+                              </ol>
+    
+                        </fieldset>
+    
+                   <button id="btnReset" type=submit>Reset</button>
+    
+                        <button id="submitButton" type="submit">SAVE</button>
+    
+                   <button id="btnUpdate" type=submit>UPDATE</button>
+    
+                   <button id="btnDrop" type=submit>DROP</button>
+    
+                 </form><br />
+    
+           <div id="results"></div>
+    <span style="font-family: Calibri; font-size: small;"> 
+        <script type="text/javascript" src="./js/index.js"> </script>
+   </body>
+    
+    
+    
+   </html>
+    
+   
